@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "890b7602-2e26-457a-967f-b244b3b00802",
+		"name": "moneyhub-ms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "export",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generate report",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/report",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "investment",
+			"item": [
+				{
+					"name": "get all investments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/investments",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"investments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post export",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "financial-companies",
+			"item": [
+				{
+					"name": "get all financial companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
