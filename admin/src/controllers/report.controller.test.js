@@ -11,7 +11,7 @@ const mockRes = {
 describe("report controller", () => {
     describe("generate report", () => {
         test("calls service", async () => {
-            generateReport(mockReq, mockRes)
+            await generateReport(mockReq, mockRes)
 
             expect(generateService.generate).toBeCalled()
         })
