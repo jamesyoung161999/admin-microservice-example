@@ -21,7 +21,7 @@ app.get("/investments/:id", (req, res) => {
   })
 })
 
-app.post("/report", (req, res) => reportController.generateReport(req, res))
+app.post("/report", async (req, res) => await reportController.generateReport(req, res))
 
 app.listen(config.port, (err) => {
   if (err) {
