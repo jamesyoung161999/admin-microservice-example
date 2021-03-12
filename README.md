@@ -1,3 +1,13 @@
+# Question Answers
+How might you make this service more secure?
+- useing JWT and middleware to check for, and decode the token. Access controll using claims.
+
+How would you make this solution scale to millions of records?
+- a few strategies: horizontal scaling, could also leverage worker/child threads 
+
+What else would you have liked to improve given more time?
+- lots more rigourous unit tests, e2e tests, integration tests, routing files, error handling.
+
 # Moneyhub Tech Test - Investments and Holdings
 
 At Moneyhub we use microservices to partition and separate the concerns of the codebase. In this exercise we have given you an example `admin` service and some accompanying services to work with. In this case the admin service backs a front end admin tool allowing non-technical staff to interact with data.
