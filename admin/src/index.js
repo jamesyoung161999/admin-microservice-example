@@ -3,6 +3,8 @@ const bodyParser = require("body-parser")
 const config = require("config")
 const request = require("request")
 
+const reportController = require("./controllers/report.controller")
+
 const app = express()
 
 app.use(bodyParser.json({limit: "10mb"}))
@@ -18,6 +20,8 @@ app.get("/investments/:id", (req, res) => {
     }
   })
 })
+
+app.post("/report", async (req, res) => await reportController.generateReport(req, res))
 
 app.listen(config.port, (err) => {
   if (err) {
