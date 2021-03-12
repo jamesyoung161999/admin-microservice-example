@@ -3,7 +3,7 @@ How might you make this service more secure?
 - useing JWT and middleware to check for, and decode the token. Access controll using claims.
 
 How would you make this solution scale to millions of records?
-- a few strategies: horizontal scaling, could also leverage worker/child threads 
+- a few strategies: horizontal scaling, could also leverage worker/child threads, batching calls to other microservices.
 
 What else would you have liked to improve given more time?
 - lots more rigourous unit tests, e2e tests, integration tests, routing files, error handling.
